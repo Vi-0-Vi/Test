@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1704561497 source:c:\users\Иван\desktop\projects\learning\test\main.cpp
+	<iostream>
+	"TestClass.h"
+
+1704561686 c:\users\Иван\desktop\projects\learning\test\include\testclass.h
+
+1704561464 source:c:\users\Иван\desktop\projects\learning\test\src\testclass.cpp
+	"TestClass.h"
+	<iostream>
+	<time.h>
+
