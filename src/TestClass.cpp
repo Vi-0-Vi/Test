@@ -2,19 +2,25 @@
 #include <iostream>
 #include <time.h>
 
-TestClass::TestClass()
+TestClass::TestClass(int count_elements)
 {
     srand(time(NULL));
-    random_num = 1 + rand() % 100;
+
+    ptr_arr = new int [count_elements];
+    for (int i = 0; i < count_elements; i++)
+    {
+        ptr_arr[i] = 1 + rand() % 100;
+    }
     //ctor
 }
 
 TestClass::~TestClass()
 {
+    delete [] ptr_arr;
     //dtor
 }
 
-int TestClass::getRandomNum()
+int *TestClass::getPtrArr()
 {
-    return random_num;
+    return ptr_arr;
 }

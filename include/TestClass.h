@@ -5,15 +5,15 @@
 class TestClass
 {
     public:
-        TestClass();
+        TestClass(int);
         virtual ~TestClass();
 
-        int getRandomNum();
+        int *getPtrArr();
 
     protected:
 
     private:
-        int random_num;
+        int *ptr_arr;
 };
 
 #endif // TESTCLASS_H
